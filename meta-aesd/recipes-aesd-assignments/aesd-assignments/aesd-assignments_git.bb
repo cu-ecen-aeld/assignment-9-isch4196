@@ -24,7 +24,7 @@ FILES:${PN} += "${bindir}/aesdsocket"
 # TODO: customize these as necessary for any libraries you need for your application
 TARGET_LDFLAGS += "-pthread -lrt"
 
-#flag your package as one that uses an init script
+#flag your package as one that uses an init script, means package is an init daemon, so needs logic to support that
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME:${PN} = "aesdsocket-start-stop.sh"
