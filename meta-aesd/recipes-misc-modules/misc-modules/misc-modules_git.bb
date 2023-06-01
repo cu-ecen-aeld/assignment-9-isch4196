@@ -17,7 +17,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment-7-isch4196.git;protocol=
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "9d1d6dcc651aebae5c3bf7657d702b2bff35b1ae"
+SRCREV = "7442de2c3e9bdc1f59f099d9d24d222fbe34222e"
 
 S = "${WORKDIR}/git"
 
