@@ -8,7 +8,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-isch4196.gi
 
 PV = "1.0+git${SRCPV}"
 # TODO: set to reference a specific commit hash in your assignment repo
-SRCREV = "546bafafadb693643ede088b4694ceeea62a800b"
+SRCREV = "30b2f5d9ec836348a5f68d44c5ec6967113a4185"
 
 # This sets your staging directory based on WORKDIR, where WORKDIR is defined at 
 # https://docs.yoctoproject.org/ref-manual/variables.html?highlight=workdir#term-WORKDIR
@@ -31,14 +31,6 @@ INITSCRIPT_NAME:${PN} = "aesdsocket-start-stop.sh"
 
 # needed for pthread_exit, else aesdsocket crashes
 RDEPENDS:${PN} += "libgcc"
-
-do_configure () {
-	:
-}
-
-do_compile () {
-	oe_runmake
-}
 
 do_install () {
 	# TODO: Install your binaries/scripts here.
